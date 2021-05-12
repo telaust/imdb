@@ -1,1 +1,1 @@
-# imdb
+# IMDB review classification service
