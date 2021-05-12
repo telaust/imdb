@@ -1,0 +1,12 @@
+<h1>Sentiment Analysis of reviews</h1>
+
+<form action="/analyse/" method="post"> {% csrf_token %}
+    <textarea name="Text1" cols="40"  rows="5"></textarea>
+    <input type="submit" value="Analyse"/>
+</form>
+
+<ul>
+    {% for item in items %}
+    <li>{{item.sentiment}}</li>
+    {% endfor %}
+</ul>
